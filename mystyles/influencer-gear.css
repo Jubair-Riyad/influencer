@@ -235,6 +235,32 @@ footer{
 
 
 
+    header{
+        max-width: 360px;
+        margin: 0px auto;
+    }
+    
+    /*Header Nav Section*/
+    header nav{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;
+        align-items: center; */
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav h3{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+
+
+
+
 
     .banner{
         margin-top: 50px;
@@ -242,6 +268,10 @@ footer{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    .banner-img img{
+        height: 75%;
+        width: 75%;
     }
     .banner-content{
         display: flex;
@@ -285,26 +315,35 @@ footer{
 
 /*Collection Section*/
     .product-container{
-        grid-template-columns: 1fr;       
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
 /*Featured Products Section*/
     .featured{
+        display: flex;
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
         align-items: center;
+        border: #100c24 2px solid;
+        max-width: 329px ;
+        margin: 50px auto;
     }
+
     .featured h3{
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 20px;
     }
-    .featured-img{
-        height: 188px;
+    /* .featured-img img{
+        height: 188px; 
         width: 299px;
-        margin: 10px auto;
-    }
+        padding: 0px;
+        margin: 0px 0px;
+    } */
+     
     .featured p{
         width: 329px;
         height: 146px;
@@ -312,4 +351,5 @@ footer{
         font-weight: bold;
         color: #6C6C6C;
     }
+
 }
