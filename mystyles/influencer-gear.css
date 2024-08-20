@@ -222,3 +222,94 @@ footer{
     fill: white;
 
 }
+
+
+/*----------Responsive for Mobile-----------*/
+
+@media screen and (max-width: 576px) {
+    body{
+        max-width: 360px;
+    }
+    /*Header section*/
+    /* <i class="fa-solid fa-bars"></i> */
+
+
+
+
+    .banner{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-content h2{
+        line-height: normal;
+        font-size: 28px;
+        font-weight: bold;
+        width: 321px;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    .banner-content p{
+        font-size: 14px;
+        font-weight: 600;
+        color: #3A3A3A;
+        width: 321px;
+    }
+    
+
+
+
+
+
+
+
+.market-logo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.market-logo img{
+    width: 75%;
+}
+
+/*Collection Section*/
+    .product-container{
+        grid-template-columns: 1fr;       
+    }
+
+/*Featured Products Section*/
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured h3{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .featured-img{
+        height: 188px;
+        width: 299px;
+        margin: 10px auto;
+    }
+    .featured p{
+        width: 329px;
+        height: 146px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #6C6C6C;
+    }
+}
